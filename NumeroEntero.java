@@ -23,5 +23,17 @@ public class NumeroEntero {
         }
         return cantidad;
     }
+
+    public int cantidadDigitosPares() {
+        long n1 = this.n;
+        int cantidad = 0;
+        while(n1 > 0) {
+            if ((n1 % 10) == 0) {
+                cantidad++;
+            }
+            n1 = n1 / 10;
+        }
+        return cantidad;
+    }
     
 }

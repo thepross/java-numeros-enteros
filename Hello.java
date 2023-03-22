@@ -19,14 +19,17 @@ public class Hello {
             System.out.println(n1);
             System.out.println("Cantidad de digitos: " + n1.cantidadDigitos());
             System.out.println();
+
+            // cantidad de digitos pares
+            System.out.println(n1.cantidadDigitosPares());
         }
         scanner.close();
         showSpaces();
 
         System.out.println("");
-        
+
         System.out.println("");
-        
+
         System.out.println("");
     }
 

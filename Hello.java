@@ -17,6 +17,7 @@ public class Hello {
             NumeroEntero n1 = new NumeroEntero();
             n1.set(Long.parseLong(numero));
             System.out.println(n1);
+            System.out.println(n1);
             System.out.println("Cantidad de digitos: " + n1.cantidadDigitos());
             System.out.println();
         }
@@ -25,9 +26,12 @@ public class Hello {
 
         System.out.println("");
         
-        System.out.println("");
+        System.out.println("this is ");
+        System.out.println("this is ");
+        System.out.println("this is ");
+        System.out.println("this is ");
         
-        System.out.println("");
+        System.out.println("Esta es una rama de master!");
     }
 
     public static void showCharacter(String s) {

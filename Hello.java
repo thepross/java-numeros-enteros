@@ -24,6 +24,10 @@ public class Hello {
         showSpaces();
 
         System.out.println("");
+        
+        System.out.println("");
+        
+        System.out.println("");
     }
 
     public static void showCharacter(String s) {

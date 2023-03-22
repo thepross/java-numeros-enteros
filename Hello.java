@@ -20,6 +20,9 @@ public class Hello {
             System.out.println(n1);
             System.out.println("Cantidad de digitos: " + n1.cantidadDigitos());
             System.out.println();
+
+            // cantidad de digitos pares
+            System.out.println(n1.cantidadDigitosPares());
         }
         scanner.close();
         showSpaces();
@@ -32,6 +35,10 @@ public class Hello {
         System.out.println("this is ");
         
         System.out.println("Esta es una rama de master!");
+
+        System.out.println("");
+
+        System.out.println("");
     }
 
     public static void showCharacter(String s) {

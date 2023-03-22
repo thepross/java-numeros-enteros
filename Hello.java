@@ -41,4 +41,8 @@ public class Hello {
             System.out.println("");
         }
     }
+
+    public static void nuevaFuncion() {
+        System.out.println("");
+    }
 }

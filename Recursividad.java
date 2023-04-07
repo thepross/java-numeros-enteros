@@ -1,6 +1,4 @@
-import java.util.prefs.BackingStoreException;
 
-import javax.management.BadBinaryOpValueExpException;
 
 public class Recursividad {
 
@@ -620,6 +618,47 @@ public class Recursividad {
         }
     }
 
-    
 
+    public void cargarMatrizTriangularSuperior(int[][] matriz, int fila, int columna) {
+        int fi = 0;
+        int ci = columna - 1;
+        int valor = 0;
+        cargarMatrizTriangularSuperior(matriz, fila, columna, fi, ci, valor);
+    }
+
+    private void cargarMatrizTriangularSuperior(int[][] matriz, int fila, int columna, int fi, int ci, int valor) {
+        if (fi < fila) {
+            int init = valor;
+            for (int i = ci; i >= fi; i--) {
+                matriz[fi][i] = init;
+                init++;
+            }
+            cargarMatrizTriangularSuperior(matriz, fila, columna, fi + 1, ci, valor + 1);
+        }
+    }
+
+
+    public void cargarMatrizForma4(int[][] matriz, int fila, int columna) {
+        int fi = 0;
+        int ci = 0;
+        int valor = 1;
+        cargarMatrizForma4(matriz, fila, columna, fi, ci, valor);
+    }
+
+    private void cargarMatrizForma4(int[][] matriz, int fila, int columna, int fi, int ci, int valor) {
+        if (ci < columna) {
+            if (ci % 2 == 0) {
+                for (int i = 0; i < fila; i++) {
+                    matriz[i][ci] = valor;
+                    valor++;
+                }
+            } else {
+                for (int i = fila - 1; i >= 0; i--) {
+                    matriz[i][ci] = valor;
+                    valor++;
+                }
+            }
+            cargarMatrizForma4(matriz, fila, columna, fi, ci + 1, valor);
+        }
+    }
 }

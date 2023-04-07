@@ -140,9 +140,7 @@ public class MainExample {
         }
         System.out.println("");
 
-
         System.out.println(r.numMayor("ho2la 23com82o es43ta3s?"));
-
 
         espaciado();
         int[][] matrizHueca = new int[10][10];
@@ -175,6 +173,29 @@ public class MainExample {
             System.out.print(array[i] + ", ");
         }
         System.out.println("");
+
+        espaciado();
+        int[][] matrizTriangular = new int[10][10];
+        r.cargarMatrizTriangularSuperior(matrizTriangular, 5, 5);
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                System.out.print(matrizTriangular[i][j] + " \t");
+            }
+            System.out.println("");
+        }
+
+        espaciado();
+        int[][] matrizCuadrada2 = new int[10][10];
+        r.cargarMatrizForma4(matrizCuadrada2, 5, 4);
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(matrizCuadrada2[i][j] + " \t");
+            }
+            System.out.println("");
+        }
+
 
     }
 
